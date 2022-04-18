@@ -11,7 +11,7 @@ function NewTicket() {
   const { user } = useSelector((state) => state.auth);
   // Set local state
   const { isLoading, isError, isSuccess, message } = useSelector(
-    (state) => state.ticket
+    (state) => state.tickets
   );
 
   const [name] = useState(user.name);
